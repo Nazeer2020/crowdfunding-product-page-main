@@ -1,0 +1,642 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: "Commissioner", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  border-bottom: 0.2px solid hsl(0, 0%, 48%);
+}
+
+/* ======================================================================================= */
+/* Heading */
+/* ======================================================================================= */
+
+h2,
+h3 {
+  font-size: 110%;
+}
+
+.master-card h2 {
+  padding: 10px 50px;
+}
+
+.collect-amount h3 {
+  padding: 20px 0 5px 0;
+}
+
+.select-modal h4,
+.select-modal h3,
+.about-project h3,
+.about-project h4 {
+  padding: 5%;
+}
+.select-modal h4,
+.about-project h4 {
+  display: inline-block;
+  padding-right: 0;
+}
+
+.select-modal .pledge-start h4 {
+  font-size: 100%;
+  display: block;
+  text-align: center;
+}
+
+
+.success-modal h4 {
+  padding: 5% 0;
+}
+
+/* ======================================================================================= */
+/* Paraghraph */
+/* ======================================================================================= */
+
+p {
+  font-size: 80%;
+  line-height: 1.5;
+  color: hsl(0, 0%, 48%);
+}
+
+.master-card p {
+  padding: 5px 10%;
+}
+.select-modal p,
+.about-project p {
+  padding: 0 0 0 5%;
+}
+
+.about-project .Pledge {
+  color: hsl(176, 50%, 47%);
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+
+
+.success-modal p {
+  padding: 5% 0;
+}
+
+/* ======================================================================================= */
+/* link and button */
+/* ======================================================================================= */
+
+section a {
+  text-decoration: none;
+  display: inline-block;
+  height: 45px;
+  width: 140px;
+  font-size: 80%;
+  background-color: hsl(176, 50%, 47%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  color: #fff;
+  margin: 15px 0;
+}
+
+section a:hover {
+  background-color: hsl(176, 72%, 28%);
+}
+
+header .des-menu a:hover {
+  border-bottom: 0.5px solid hsl(0, 0%, 48%);
+  
+}
+
+.master-card a {
+  width: 200px;
+  height: 50px;
+  margin-left: 10%;
+}
+
+.about-project a {
+  margin-left: 5%;
+}
+
+.about-project .specail a {
+  background-color: hsl(0, 0%, 48%);
+}
+
+.mobile-menu a {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: left;
+  margin: 3% 0 0 10%;
+  font-size: 100%;
+  padding: 0;
+  text-decoration: none;
+  display: inline-block;
+  height: 45px;
+  width: 140px;
+}
+
+.pledge-start a {
+  float: right;
+  height: 40px;
+  width: 110px;
+  margin: 5px 5px;
+}
+
+.success-modal a {
+  width: 80px;
+  margin: 5% auto;
+}
+
+.des-menu a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 25px;
+}
+
+/* ======================================================================================= */
+/* Header */
+/* ======================================================================================= */
+
+header {
+  background-image: url("../images/image-hero-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+}
+
+header img {
+  margin: 5%;
+}
+
+header .fa-bars {
+  display: block;
+  float: right;
+  margin: 5% 5% 5% 0;
+  color: #fff;
+}
+
+.mobile-menu-hide {
+  display: none;
+}
+
+.mobile-menu {
+  position: absolute;
+  background-color: #fff;
+  text-align: left;
+  z-index: 9999;
+  left: 5%;
+  right: 5%;
+  bottom: 0;
+  top: 10%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px hsl(0, 0%, 48%);
+  height: 30vh;
+}
+
+.last-li-mobil-menu {
+  border: none;
+}
+
+.des-menu {
+  display: none;
+  float: right;
+  margin: 5% 5% 0 0;
+}
+
+
+.des-menu li {
+  display: inline-block;
+  border: none;
+  
+}
+
+
+
+/* ======================================================================================= */
+                                    /* section */
+/* ======================================================================================= */
+
+section {
+  background-color: hsl(0, 0%, 95%);
+  margin: 0;
+  padding: 2% 0;
+  width: 100%;
+}
+
+section div {
+  background-color: #fff;
+  margin: 5% 5%;
+  border-radius: 10px;
+}
+
+section span {
+  color: hsl(0, 0%, 48%);
+}
+
+.master-card,
+.collect-amount {
+  text-align: center;
+  box-shadow: 5px 5px -5px hsl(0, 0%, 48%);
+}
+
+.master-card {
+  margin-top: -80px;
+  padding-bottom: 5%;
+}
+
+.master-card img {
+  margin-top: -30px;
+}
+
+.master-card .bookmark {
+  float: right;
+  margin-top: -70px;
+  margin-right: 10%;
+  margin-bottom: 5%;
+}
+
+.collect-amount {
+  padding-bottom: 20px;
+}
+
+.collect-amount hr {
+  width: 10%;
+  margin: 20px auto 0 auto;
+}
+
+.collect-amount .progress-div {
+  height: 10px;
+  width: 80%;
+  background-color: hsl(0, 0%, 95%);
+  margin: 20px 10%;
+  border-radius: 10px;
+  text-align: left;
+  
+}
+
+.collect-amount .progress-line {
+  width: 89.914%;
+  border-bottom: 8px solid hsl(176, 72%, 28%);
+  border-radius: 10px;
+  margin: 0;
+}
+
+.select-modal,
+.about-project {
+  padding-bottom: 5%;
+}
+.select-modal div,
+.about-project div {
+  border: 0.2px solid #888;
+}
+
+.specail {
+  opacity: 0.5;
+}
+
+input[type="radio"]{
+  margin-left: 5%;
+}
+
+ .select-modal .pledge-start {
+  border: none;
+  
+}
+
+.pledge-start input {
+  
+  height: 40px;
+  width: 110px;
+  border-radius: 24px;
+  margin: 5px 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+}
+
+.success-modal {
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  z-index: 9999;
+}
+
+.select-modal {
+  position: absolute;
+  top: 10%;
+  z-index: 9999;
+  box-shadow: 10px 10px -5px hsl(0, 0%, 95%);
+}
+
+.success-modal img {
+  margin: 5%;
+}
+
+.select-modal .fa-times {
+  float: right;
+  margin-top: -10%;
+  margin-right: 5%;
+}
+
+.select-modal,
+.pledge-start {
+  display: none;
+}
+
+.bottom-border01,
+.bottom-border02,
+.bottom-border03 {
+  height: 0.1px;
+  display: none;
+}
+
+.select-modal .row,
+.select-modal .col {
+  border: none;
+  margin: 0;
+  
+}
+
+.select-modal em,
+.select-modal .span-right,
+.select-modal .right-1 {
+  display: none;
+}
+
+
+/* ======================================================================================= */
+                                    /* classes for DOM Manipulation */
+/* ======================================================================================= */
+
+
+.colorGray {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.brightcolorGray {
+  background-color: hsl(0, 0%, 97%);
+}
+
+ .select-modal .borderblue {
+  border-color: hsl(176, 50%, 47%);
+}
+
+.show {
+  display: block;
+}
+
+.Opacity {
+  opacity: 0.5;
+}
+
+/* ======================================================================================= */
+                                    /* Media Queries */
+/* ======================================================================================= */
+
+/* header */
+
+@media only screen and (max-width: 1700px) and (min-width: 700px){
+  header .fa-bars {
+     display: none;
+  }
+  
+  .des-menu {
+    display: block;   
+  }
+  
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 700px){
+  
+  .des-menu a {
+    font-size: 80%;
+  }
+  
+}
+
+/* section */
+
+@media only screen and (max-width: 1700px) and (min-width: 700px){
+  
+  p {
+    font-size: 100%;
+  }
+
+  section div {
+    margin: 20px 20%;
+  }
+  
+  .select-reward {
+    margin-left: 5%;
+    margin-left: 5%;
+    width: 90%;
+  }
+  
+  .master-card h2 {
+    font-size: 120%;
+  }
+
+  .master-card a{
+    margin-top: 50px;
+  }
+ 
+  .col {
+    width: 32%;
+    border-right: 1px solid hsl(0, 0%, 48%);
+    border-radius: 0;
+    padding: 0 1%;
+  }
+
+  .col hr {
+    display: none;
+  }
+  
+  .col p {
+    white-space: nowrap;
+    font-size: 80%;
+  }
+
+  .no-border {
+    border-right: none;
+  }
+
+   .Pledge,
+  .about-project a {
+    float: right;
+    margin-right: 5%;
+  }
+  
+  .Pledge {
+    margin-top: 5%;
+  }
+
+  .select-modal div {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+
+  .select-modal p {
+    padding: 0 0 5% 5%;
+  }
+ 
+  .select-modal .more {
+    display: none;
+  }
+
+
+  
+
+}
+
+@media only screen and (max-width: 850px) and (min-width: 700px){
+  
+  p {
+    font-size: 80%;
+  }
+  .col p {
+    font-size: 60%;
+    white-space: normal;
+  }
+
+  .col h3 {
+    font-size: 100%;
+  }
+
+  .Pledge,
+  .about-project a {
+    height: 30px;
+    width: 100px;
+    font-size: 70%;
+    
+  }
+
+  
+  
+}
+
+@media only screen and (max-width: 700px) and (min-width: 700px){
+
+  .about-project a {
+    height:25px;
+    width: 100px;
+    font-size: 70%;
+    
+  }
+
+
+}
+
+
+/* select modal */
+
+@media only screen and (max-width: 1700px) and (min-width: 700px){
+  .select-modal .row  {
+    border: none;
+    margin: 0;
+    
+  }
+  .select-modal .col {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 0;
+    border: none;
+  }
+
+  .select-modal .col a {
+    margin-right: -5px;
+  }
+  .select-modal .col h4 {
+    margin-left: -5px;
+    margin-top: 10px;
+    padding: 0;
+  }
+  
+  .select-modal .col-2 {
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  .select-modal em,
+  .select-modal .span-right,
+  .select-modal .right-1 {
+    display: inline-block;
+  }
+
+  .select-modal em {
+    margin-left: 2.5%;
+    color: hsl(176, 50%, 47%);
+    font-size: 80%;
+  }
+
+  .select-modal .span-right {
+    color: #000;
+    float: right;
+    margin: 5% 1% 0 0;
+  }
+
+ .select-modal .right-1 {
+    margin-right: 5%;
+    color: hsl(0, 0%, 48%);
+  }
+  
+
+}
+
+@media only screen and (max-width: 800px) and (min-width: 700px){
+  .select-modal a,
+  .select-modal input {
+    width: 60px;
+  }
+
+  .select-modal .col h4 {
+    font-size: 80%;
+  }
+
+  .select-modal em {
+    font-size: 60%;
+  }
+  .select-modal h4 {
+    font-size: 60%;
+    padding-left: 5px;
+  }
+
+}
+
+
+/* success modal */
+
+@media only screen and (max-width: 1700px) and (min-width: 700px){
+  .success-modal {
+    top: 50%;
+    left: 13%;
+    right: 13%;
+    height: 400px;
+    box-shadow: 40px 40px -20px hsl(0, 0%, 48%);
+    transform: translate(0, -50%);
+  }
+}
